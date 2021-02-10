@@ -18,7 +18,7 @@
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">Target</Property>
-		<Property Name="alias.value" Type="Str">10.50.52.2</Property>
+		<Property Name="alias.value" Type="Str">roboRIO-5052-FRC.local</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,76F2;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76F2</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -124,6 +124,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		<Item Name="SubSystems.vi" Type="VI" URL="../SubSystems.vi"/>
 		<Item Name="Global 1.vi" Type="VI" URL="../Global 1.vi"/>
+		<Item Name="initial heading.vi" Type="VI" URL="../../testbed-project/Support Code/initial heading.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Command Status Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Command Status Info.ctl"/>
@@ -507,6 +508,49 @@ AddOutputFilter chunkFilter
 				<Item Name="FRIC_navX_Util_DecodeProtocol_UInt16.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Util/Decode/FRIC_navX_Util_DecodeProtocol_UInt16.vi"/>
 				<Item Name="FRIC_navX_Util_DecodeProtocol_Int16.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Util/Decode/FRIC_navX_Util_DecodeProtocol_Int16.vi"/>
 				<Item Name="Get_YPRHfH.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/Get_YPRHfH.vi"/>
+				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
+				<Item Name="Spark MAX Parameter Status.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter Status.ctl"/>
+				<Item Name="Spark MAX Parameter Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter Type.ctl"/>
+				<Item Name="Spark MAX Parameter Cache Element.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter Cache Element.ctl"/>
+				<Item Name="Spark MAX Variant Data.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Variant Data.ctl"/>
+				<Item Name="Spark MAX Parameter ID.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter ID.ctl"/>
+				<Item Name="Spark MAX Get Cached Parameter.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Cached Parameter.vi"/>
+				<Item Name="Spark MAX Write Parameter Cache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Write Parameter Cache.vi"/>
+				<Item Name="NetComm_CAN_ReadStreamSession.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_ReadStreamSession.vi"/>
+				<Item Name="Spark MAX Process Parameter Stream.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Process Parameter Stream.vi"/>
+				<Item Name="NetComm_CAN_Send.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_Send.vi"/>
+				<Item Name="WPI_CAN_Send.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/WPI_CAN_Send.vi"/>
+				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
+				<Item Name="Spark MAX CAN API Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX CAN API Mask.ctl"/>
+				<Item Name="Spark MAX Get Parameter Raw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Parameter Raw.vi"/>
+				<Item Name="Spark MAX Clear Faults.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Clear Faults.vi"/>
+				<Item Name="Cast to Little Endian Byte Array.vim" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Cast to Little Endian Byte Array.vim"/>
+				<Item Name="Spark MAX Registered Devices.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Registered Devices.vi"/>
+				<Item Name="NetComm_getWatchdogActive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getWatchdogActive.vi"/>
+				<Item Name="Spark MAX Broadcast Sync.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Broadcast Sync.vi"/>
+				<Item Name="Spark MAX Daemon.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Daemon.vi"/>
+				<Item Name="Spark MAX Start Daemon.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Start Daemon.vi"/>
+				<Item Name="Spark MAX Set Parameter Byte Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Set Parameter Byte Array.vi"/>
+				<Item Name="Spark MAX Set Parameter Bool.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Set Parameter Bool.vi"/>
+				<Item Name="Spark MAX Disable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Disable.vi"/>
+				<Item Name="Spark MAX Sensor Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Sensor Type.ctl"/>
+				<Item Name="Spark MAX Set Sensor Position.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Set Sensor Position.vi"/>
+				<Item Name="Spark MAX Enable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Enable.vi"/>
+				<Item Name="Spark MAX Faults.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Faults.ctl"/>
+				<Item Name="Spark MAX Unpack Faults.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Unpack Faults.vi"/>
+				<Item Name="Spark MAX Status 0 Flags.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Status 0 Flags.ctl"/>
+				<Item Name="Spark MAX Status 0 Frame.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Status 0 Frame.ctl"/>
+				<Item Name="Spark MAX Get Status 0.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Status 0.vi"/>
+				<Item Name="Spark MAX Get Applied Output.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Get Applied Output.vi"/>
+				<Item Name="Spark MAX Get Output.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Get Output.vi"/>
+				<Item Name="Spark MAX Set Output Basic.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Set Output Basic.vi"/>
+				<Item Name="Spark MAX Register Device With Daemon.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Register Device With Daemon.vi"/>
+				<Item Name="Spark MAX Check Firmare Version.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Check Firmare Version.vi"/>
+				<Item Name="NetComm_CAN_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_Receive.vi"/>
+				<Item Name="WPI_CAN_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/WPI_CAN_Receive.vi"/>
+				<Item Name="Spark MAX Get Firmware Version.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Firmware Version.vi"/>
+				<Item Name="NetComm_CAN_OpenStreamSession.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_OpenStreamSession.vi"/>
+				<Item Name="Spark MAX Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Open.vi"/>
 				<Item Name="Get_Error_Status.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/Advanced/Get_Error_Status.vi"/>
 				<Item Name="WPI_SerialPortRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SerialPort/WPI_SerialPortRef.ctl"/>
 				<Item Name="WPI_SerialPortWrite.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SerialPort/WPI_SerialPortWrite.vi"/>
@@ -610,50 +654,6 @@ AddOutputFilter chunkFilter
 				<Item Name="FRIC_navX_Internal_I2C_GenerateCommand.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Processing Loop/FRIC_navX_Internal_I2C_GenerateCommand.vi"/>
 				<Item Name="FRIC_navX_Internal_I2C_ProcessingLoop.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Processing Loop/FRIC_navX_Internal_I2C_ProcessingLoop.vi"/>
 				<Item Name="NavX Main.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/NavX Main.vi"/>
-				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
-				<Item Name="Spark MAX Parameter Status.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter Status.ctl"/>
-				<Item Name="Spark MAX Parameter Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter Type.ctl"/>
-				<Item Name="Spark MAX Parameter Cache Element.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter Cache Element.ctl"/>
-				<Item Name="Spark MAX Variant Data.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Variant Data.ctl"/>
-				<Item Name="Spark MAX Parameter ID.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Parameter ID.ctl"/>
-				<Item Name="Spark MAX Get Cached Parameter.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Cached Parameter.vi"/>
-				<Item Name="Spark MAX Write Parameter Cache.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Write Parameter Cache.vi"/>
-				<Item Name="NetComm_CAN_ReadStreamSession.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_ReadStreamSession.vi"/>
-				<Item Name="Spark MAX Process Parameter Stream.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Process Parameter Stream.vi"/>
-				<Item Name="NetComm_CAN_Send.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_Send.vi"/>
-				<Item Name="WPI_CAN_Send.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/WPI_CAN_Send.vi"/>
-				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
-				<Item Name="Spark MAX CAN API Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX CAN API Mask.ctl"/>
-				<Item Name="Spark MAX Get Parameter Raw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Parameter Raw.vi"/>
-				<Item Name="Spark MAX Clear Faults.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Clear Faults.vi"/>
-				<Item Name="Cast to Little Endian Byte Array.vim" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Cast to Little Endian Byte Array.vim"/>
-				<Item Name="Spark MAX Registered Devices.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Registered Devices.vi"/>
-				<Item Name="NetComm_getWatchdogActive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getWatchdogActive.vi"/>
-				<Item Name="Spark MAX Broadcast Sync.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Broadcast Sync.vi"/>
-				<Item Name="Spark MAX Daemon.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Daemon.vi"/>
-				<Item Name="Spark MAX Start Daemon.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Start Daemon.vi"/>
-				<Item Name="Spark MAX Set Parameter Byte Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Set Parameter Byte Array.vi"/>
-				<Item Name="Spark MAX Set Parameter Bool.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Set Parameter Bool.vi"/>
-				<Item Name="Spark MAX Disable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Disable.vi"/>
-				<Item Name="Spark MAX Sensor Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Sensor Type.ctl"/>
-				<Item Name="Spark MAX Set Sensor Position.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Set Sensor Position.vi"/>
-				<Item Name="Spark MAX Enable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Enable.vi"/>
-				<Item Name="Spark MAX Faults.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Faults.ctl"/>
-				<Item Name="Spark MAX Unpack Faults.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Unpack Faults.vi"/>
-				<Item Name="Spark MAX Status 0 Flags.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Status 0 Flags.ctl"/>
-				<Item Name="Spark MAX Status 0 Frame.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Status 0 Frame.ctl"/>
-				<Item Name="Spark MAX Get Status 0.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Status 0.vi"/>
-				<Item Name="Spark MAX Get Applied Output.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Get Applied Output.vi"/>
-				<Item Name="Spark MAX Get Output.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Get Output.vi"/>
-				<Item Name="Spark MAX Set Output Basic.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Set Output Basic.vi"/>
-				<Item Name="Spark MAX Register Device With Daemon.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Daemon/Spark MAX Register Device With Daemon.vi"/>
-				<Item Name="Spark MAX Check Firmare Version.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Check Firmare Version.vi"/>
-				<Item Name="NetComm_CAN_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_Receive.vi"/>
-				<Item Name="WPI_CAN_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/WPI_CAN_Receive.vi"/>
-				<Item Name="Spark MAX Get Firmware Version.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Firmware Version.vi"/>
-				<Item Name="NetComm_CAN_OpenStreamSession.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_CAN_OpenStreamSession.vi"/>
-				<Item Name="Spark MAX Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Open.vi"/>
-				<Item Name="DS Update Ops.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Typedefs/DS Update Ops.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

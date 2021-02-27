@@ -121,6 +121,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Test subsystem" Type="Folder" URL="../Test subsystem">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Ball handling" Type="Folder" URL="../Ball handling">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 		<Item Name="Autonomous.vi" Type="VI" URL="../Autonomous.vi"/>
@@ -658,7 +661,6 @@ AddOutputFilter chunkFilter
 				<Item Name="FRIC_navX_Internal_I2C_GenerateCommand.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Processing Loop/FRIC_navX_Internal_I2C_GenerateCommand.vi"/>
 				<Item Name="FRIC_navX_Internal_I2C_ProcessingLoop.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/_Processing Loop/FRIC_navX_Internal_I2C_ProcessingLoop.vi"/>
 				<Item Name="NavX Main.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/NavX Main.vi"/>
-				<Item Name="DS Update Ops.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Typedefs/DS Update Ops.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -675,6 +677,15 @@ AddOutputFilter chunkFilter
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Read Shooter Operation.vi" Type="VI" URL="../Shooter/Commands/Read Shooter Operation.vi"/>
+			<Item Name="Shooter Check for New Command.vi" Type="VI" URL="../Shooter/Implementation/Infrastructure/Shooter Check for New Command.vi"/>
+			<Item Name="Shooter Command Helper.vi" Type="VI" URL="../Shooter/Implementation/Infrastructure/Shooter Command Helper.vi"/>
+			<Item Name="Shooter Controller Initialization.vi" Type="VI" URL="../Shooter/Implementation/Infrastructure/Shooter Controller Initialization.vi"/>
+			<Item Name="Shooter Controller Interactive Check.vi" Type="VI" URL="../Shooter/Implementation/Infrastructure/Shooter Controller Interactive Check.vi"/>
+			<Item Name="Shooter Controller.vi" Type="VI" URL="../Shooter/Implementation/Shooter Controller.vi"/>
+			<Item Name="Shooter Operations.ctl" Type="VI" URL="../Shooter/Implementation/Shooter Operations.ctl"/>
+			<Item Name="Shooter Published Globals.vi" Type="VI" URL="../Shooter/Implementation/Shooter Published Globals.vi"/>
+			<Item Name="Shooter Setpoints.ctl" Type="VI" URL="../Shooter/Implementation/Shooter Setpoints.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">

@@ -124,6 +124,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Ball handling" Type="Folder" URL="../Ball handling">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Angle Finder" Type="Folder" URL="../Angle Finder">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 		<Item Name="Autonomous.vi" Type="VI" URL="../Autonomous.vi"/>
@@ -132,6 +135,9 @@ AddOutputFilter chunkFilter
 		<Item Name="SubSystems.vi" Type="VI" URL="../SubSystems.vi"/>
 		<Item Name="Global 1.vi" Type="VI" URL="../Global 1.vi"/>
 		<Item Name="distance to target.vi" Type="VI" URL="../../Watashi-Infinite-Recharge-San-2021/distance to target.vi"/>
+		<Item Name="initial angle.vi" Type="VI" URL="../initial angle.vi"/>
+		<Item Name="Final Heading.vi" Type="VI" URL="../Final Heading.vi"/>
+		<Item Name="Angle Output.vi" Type="VI" URL="../Angle Output.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Command Status Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Command Status Info.ctl"/>
